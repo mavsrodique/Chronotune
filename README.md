@@ -1,4 +1,4 @@
-# Karaoke App - Project Context
+# CHRONOTUNE - PROJECT CONTEXT
 Project Goal
 Build a personal-use karaoke system that runs locally as a web application.
 The app should imitate the experience of a real karaoke machine (like Platinum Karaoke):
