@@ -1,7 +1,6 @@
-Karaoke App - Project Context
+# Karaoke App - Project Context
 Project Goal
 Build a personal-use karaoke system that runs locally as a web application.
-
 The app should imitate the experience of a real karaoke machine (like Platinum Karaoke):
 
 Search songs
@@ -11,7 +10,7 @@ Maintain a queue
 Play karaoke videos
 The app will run on the user's laptop through a localhost server and open in Brave browser.
 
-Technology Stack
+# Technology Stack
 Backend
 Python + Flask
 
@@ -28,7 +27,7 @@ SQLite database
 Browser
 Brave Browser will be used as the interface.
 
-Main System Flow
+# Main System Flow
 User:
 
 Searches: "Zombie"
@@ -123,7 +122,7 @@ QUEUE
 UI Design
 The interface should resemble a karaoke machine.
 
-Requirements:
+# Requirements:
 
 Large buttons
 Easy operation
