@@ -58,7 +58,7 @@ Example:
 
 { code: "3416", title: "I WANT YOU BACK", artist: "NSYNC", video_id: "", source: "database" }
 
-Search System
+# Search System
 Search should support:
 
 Song code
@@ -82,7 +82,7 @@ returns:
 
 I WANT YOU BACK - NSYNC
 
-Online Search Logic
+# Online Search Logic
 If a song is not found locally:
 
 Modify the search query internally:
@@ -115,57 +115,52 @@ artist
 video ID
 Example:
 
-QUEUE
+# QUEUE
 
 3416 - I WANT YOU BACK - NSYNC
 5000 - Zombie - The Cranberries
 UI Design
 The interface should resemble a karaoke machine.
 
-# Requirements:
-
+# Requirements
 Large buttons
 Easy operation
 Dark theme preferred
 Simple layout
 Touchscreen friendly
+
 Main sections:
-
 SEARCH
-
 RESULT
-
 RESERVE BUTTON
-
 QUEUE
-
 NOW PLAYING
 
-Development Plan
-Phase 1
+# Development Plan
+# Phase 1
 Create Flask application.
 
 Features:
-
 localhost server
 basic UI
 search box
 song display
 queue
-Phase 2
+
+# Phase 2
 Create song database.
 
 Features:
-
 import song lists
 search by code/title/artist
-Phase 3
+
+# Phase 3
 Add online song discovery.
 
 Features:
-
 find new songs
 save new video IDs
-Phase 4
+
+# Phase 4
 Add playback system.
 
