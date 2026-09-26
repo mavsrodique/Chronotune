@@ -131,9 +131,13 @@ Touchscreen friendly
 
 Main sections:
 SEARCH
+
 RESULT
+
 RESERVE BUTTON
+
 QUEUE
+
 NOW PLAYING
 
 # Development Plan
