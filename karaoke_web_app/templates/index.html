@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChronoTune</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="{{ url_for('static', filename='CHRONOTUNE.png') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+
+  <body>
+    <div id="loading-screen">
+      <div id="intro-cover">
+        <div id="intro-background"></div>
+
+        <h1 id="intro-title">CHRONOTUNE</h1>
+        <h2 id="intro-subtitle">Every Era. Every Tune.</h2>
+      </div>
+
+      <div id="vinyl">
+        <div class="vinyl-center"></div>
+      </div>
+    </div>
+    <main class="machine-interface">
+      <i class="frame-corner corner-top-left" aria-hidden="true"></i>
+      <i class="frame-corner corner-top-right" aria-hidden="true"></i>
+      <i class="frame-corner corner-bottom-left" aria-hidden="true"></i>
+      <i class="frame-corner corner-bottom-right" aria-hidden="true"></i>
+
+      <header class="hud-topbar">
+        <form id="search-form" class="search-dock">
+          <div class="search-field">
+            <span class="search-glyph" aria-hidden="true">⌕</span>
+            <input
+              id="search-input"
+              type="search"
+              placeholder="CODE, TITLE, OR ARTIST"
+              autocomplete="off"
+            />
+            <button class="search-button" type="submit">SEARCH</button>
+          </div>
+        </form>
+
+        <section class="reservation-panel" aria-label="Song result controls">
+          <button
+            id="previous-button"
+            class="nav-button"
+            type="button"
+            disabled
+            aria-label="Previous matching song"
+          >
+            <span>‹</span>
+          </button>
+
+          <article id="song-card" class="song-card empty" aria-live="polite">
+            <p class="results-label">RESULTS</p>
+            <h2>SEARCH TO BEGIN</h2>
+          </article>
+
+          <button
+            id="next-button"
+            class="nav-button"
+            type="button"
+            disabled
+            aria-label="Next matching song"
+          >
+            <span>›</span>
+          </button>
+
+          <span id="result-count" class="result-count"> 0 / 0 </span>
+
+          <button
+            id="reserve-button"
+            class="reserve-button"
+            type="button"
+            disabled
+          >
+            <span>RESERVE</span>
+            <i>+</i>
+          </button>
+        </section>
+      </header>
+
+      <section class="video-stage" aria-label="Karaoke playback window">
+        <section class="queue-indicator" aria-labelledby="queue-heading">
+          <div class="hud-label">
+            <span class="status-light"></span>
+            <span id="queue-heading">QUEUE</span>
+            <strong id="queue-count">0</strong>
+          </div>
+
+          <ol id="queue-list" class="queue-list">
+            <li class="empty-queue">STANDBY</li>
+          </ol>
+        </section>
+
+        <div
+          id="player"
+          class="background-video"
+          aria-label="Karaoke video player"
+        ></div>
+        <button id="skip-button" class="skip-button" type="button">
+          SKIP SONG
+        </button>
+
+        <div class="video-fallback" aria-hidden="true"></div>
+
+        <div class="stage-scanline" aria-hidden="true"></div>
+
+        <div class="stage-orbit" aria-hidden="true"></div>
+      </section>
+    </main>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+  </body>
+</html>
